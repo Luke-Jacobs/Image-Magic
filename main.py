@@ -8,7 +8,7 @@ if (len(sys.argv) != 4):
 a = Image.open(q)
 b = Image.open(w)
 
-if (not (a.mode == b.mode and a.height == b.height and a.width == b.width)):
+if (not ((a.mode and b.mode) == "RGB" and a.height == b.height and a.width == b.width)):
     exit(-2)
 
 c = Image.new(a.mode, (a.width, a.height))
