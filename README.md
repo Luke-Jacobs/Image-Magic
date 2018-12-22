@@ -23,3 +23,17 @@ usage: xor_img.py op [-h] [-o Output] File1 operation File2
 ```
 
 But why would anyone in their right mind ever perform an XOR on two images? Well, to encrypt an image with a secret seed! 
+
+Unencrypted image:
+
+![Unencrypted.png](logo.png)
+
+Now let's perform an XOR on this image and the previous random image! 
+
+```
+python "Image Magic.py" op -o output.png logo.png xor random.png
+```
+
+![Encrypted.png](encrypted.png)
+
+Without knowing the random seed used to generate the key image, it is nearly impossible to reverse this process to recover the original image.
