@@ -12,7 +12,7 @@ usage: "Image Magic.py" gen [-h] [-c] x y Output
 
 A 400x300 png image of random pixels:
 
-![Random.png](random.png)
+![Random.png](Pictures/random.png)
 
 ## Operations
 
@@ -26,7 +26,7 @@ But why would anyone in their right mind ever perform an XOR on two images? Well
 
 Unencrypted image:
 
-![Unencrypted.png](logo.png)
+![Unencrypted.png](Pictures/logo.png)
 
 Now let's perform an XOR on this image and the previous random image! 
 
@@ -34,6 +34,6 @@ Now let's perform an XOR on this image and the previous random image!
 python "Image Magic.py" op -o output.png logo.png xor random.png
 ```
 
-![Encrypted.png](encrypted.png)
+![Encrypted.png](Pictures/encrypted.png)
 
 Without knowing the random seed used to generate the key image, it is nearly impossible to reverse this process to recover the original image.
